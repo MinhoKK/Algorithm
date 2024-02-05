@@ -1,86 +1,80 @@
 package DataStructure;
 
-import java.io.*;
 import java.util.*;
+import java.io.*;
+import static java.lang.Integer.parseInt;
 
 public class Main_2493_탑_고민호 {
 	/**
 	 * @author 고민호
-	 * 다음에 다시 풀어보기
 	 * 백준_2493_탑
 	 * 난이도 G5
-	 * 결과 : 통과		메모리 : 86,580KB		시간 : 824ms
+	 * 결과 : 통과		메모리 : 84,560KB		시간 : 868ms
 	 * 
-	 * 풀이방법
-	 * 1. 배열을 통한 완전탐색으로 문제를 해결하려 했으나 N이 최대 500,000으로 최악의 경우 O(N^2)로 제한시간 1.5초를 벗어난다고 생각
-	 * 2. Stack 자료구조를 사용하여 문제해결
-	 * 3. Stack에 push하기 전 Stack의 Top과 비교하기
+	 * 풀이방식
+	 * 1. Stack 자료구조 사용하기
+	 * 2. 첫번째 탑의 레이저 수신 가능하 탑은 존재 X
+	 * 3. 두번째 탑부터 Stack의 top에 있는 탑의 높이와 비교하며 수신가능한 탑 찾기 
 	 */
-
-	// 탑 클래스
 	static class Top{
-		int num;	// 탑 번호
-		int height;	// 탑 높이
+		int num;
+		int height;
 		
-		// 탑 클래스 생성자
 		public Top(int num, int height) {
 			this.num = num;
 			this.height = height;
 		}
-		
 	}
 	
 	static int N;	// 탑의 개수
-	static Stack<Top> stack = new Stack<>();	// 탑을 저장하는 Stack
+	static int num = 1;	// 탑의 번호
+	static Stack<Top> stack = new Stack<>();
 	static StringBuilder sb = new StringBuilder();
-	
 	
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st;
 		
-		N = Integer.parseInt(br.readLine());
+		N = parseInt(br.readLine());
 		
 		st = new StringTokenizer(br.readLine());
-		
-		// i=1 부터 시작하여 N까지 반복하여 탑 정보 받기 -> 탑의 번호와 매칭하기 위해
-		for(int i=1; i<=N; i++) {
-			// 탑 객체 생성
-			Top top = new Top(i, Integer.parseInt(st.nextToken()));
+		for(int i=0; i<N; i++) {
+			// 탑 객체는 탑번호, 탑높이를 가진다
+			// 탑번호는 객체가 늘때마다 +1
+			Top top = new Top(num++, parseInt(st.nextToken()));
 			
-			// Stack이 비어있는 경우 -> 레이저 신호를 수신할 탑이 없는 경우로 0 출력 및 Push
-			if(stack.size() == 0) {
+			// 맨처음 탑의 레이저를 수신가능한 탑은 존재X -> 반드시 0 출력
+			if(stack.isEmpty()) {
 				sb.append(0).append(" ");
 				stack.push(top);
 				continue;
 			}
 			
-			// Stack에 탑이 존재하는 경우
-			// 새로운 탑이 stack에 push 될때까지 반복
+			// 수신가능한 탑 찾기가 종료되는 경우의 수 2가지
+			// 1. 자신의 높이와 같거나 높은 높이를 가진 탑을 발견한 경우
+			// 2. 자신의 앞에 수신가능한 탑이 없는 경우
 			while(true) {
-				// 밑에 구문에서 stack.pop()을 하여 스택이 빈 경우 -> 레이저 신호를 수신할 탑이 없는 경우로 0 출력 및 Push
-				if(stack.size() == 0) {
-					sb.append(0).append(" ");
-					stack.push(top);
+				// 1. 수신가능한 탑을 발견한 경우
+				if(stack.peek().height >= top.height) {
+					sb.append(stack.peek().num).append(" ");	// 해당 탑의 번호 출력
+					stack.push(top);	// 현재 탑 stack에 추가
 					break;
-				}
-				
-				Top nowTop = stack.peek();	// 스택의 Top에 위치한 탑객체
-				
-				// Top에 위치한 탑객체의 높이 >= 새로운 탑객체의 높이
-				// 레이저를 수신할 수 있다는 의미
-				if(nowTop.height >= top.height) {
-					sb.append(nowTop.num).append(" ");	// Top에 위치한 탑객체(레이저를 수신하는 탑)의 번호 출력
-					stack.push(top);	// Stack에 새로운 탑객체 추가
-					break;
-				// Top에 위치한 탑객체의 높이 < 새로운 탑객체의 높이
-				// 레이저를 수신할 수 없다는 의미
 				} else {
-					stack.pop();	// 다음 탑객체를 Top으로 올리기 위해 Pop
+					// 바로 앞 탑이 수신이 불가능한 경우
+					stack.pop();	// stack에서 제거
 				}
+				
+				// 수신가능한 탑이없어 stack에서 계속 pop을 해오다 비교가능한 탑이 더이상 없는 경우 
+				// -> 수신가능한 탑 X -> 0 출력
+				if(stack.isEmpty()) {
+					sb.append(0).append(" ");
+					stack.push(top);	// 현재 탑 stack에 추가
+					break;
+				}
+				
 			}
-			
 		}
 		System.out.println(sb);
 	}
+
 }
