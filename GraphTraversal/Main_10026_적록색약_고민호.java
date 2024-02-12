@@ -1,4 +1,4 @@
-package DataStructure;
+package GraphTraversal;
 
 import java.io.*;
 import java.util.*;
