@@ -9,4 +9,8 @@
 | 2024.02.13 | [7567](https://www.acmicpc.net/problem/7567)    | 토마토                              	|   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/11.svg"/>  |
 | 2024.02.14 | [3109](https://www.acmicpc.net/problem/3109)    | 빵집	                                |   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/14.svg"/>  |
 | 2024.02.14 | [2636](https://www.acmicpc.net/problem/2636)    | 치즈	                                |   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/12.svg"/>  |
+| 2024.02.18 | [18232](https://www.acmicpc.net/problem/18232)  | 텔레포트 정거장	                        |   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/9.svg"/>   |
+| 2024.02.18 | [2644](https://www.acmicpc.net/problem/2644)    | 촌수계산		                        |   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/9.svg"/>   |
+| 2024.02.18 | [4963](https://www.acmicpc.net/problem/4963)    | 섬의 개수		                        |   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/9.svg"/>   |
+| 2024.02.18 | [17135](https://www.acmicpc.net/problem/17135)  | 캐슬 디펜스		                    |   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/13.svg"/>   |
 
