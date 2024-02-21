@@ -13,4 +13,9 @@
 | 2024.02.18 | [2644](https://www.acmicpc.net/problem/2644)    | 촌수계산		                        |   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/9.svg"/>   |
 | 2024.02.18 | [4963](https://www.acmicpc.net/problem/4963)    | 섬의 개수		                        |   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/9.svg"/>   |
 | 2024.02.18 | [17135](https://www.acmicpc.net/problem/17135)  | 캐슬 디펜스		                    |   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/13.svg"/>   |
+| 2024.02.19 | [1227](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14wL9KAGkCFAYD)  | 미로2 				   	   		|       그래프탐색        | D4  |
+| 2024.02.20 | [1987](https://www.acmicpc.net/problem/1987)    | 알파벳			                    |   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/12.svg"/>   |
+| 2024.02.20 | [14940](https://www.acmicpc.net/problem/14940)  | 쉬운최단거리		                    |   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/10.svg"/>   |
+| 2024.02.21 | [2573](https://www.acmicpc.net/problem/2573)	   | 빙산				                    |   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/12.svg"/>   |
+| 2024.02.21 | [13023](https://www.acmicpc.net/problem/13023)  | ABCDE			                    |   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/11.svg"/>   |
 
