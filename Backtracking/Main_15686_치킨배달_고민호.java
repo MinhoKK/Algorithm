@@ -1,4 +1,4 @@
-package Implementation;
+package Backtracking;
 
 import java.io.*;
 import java.util.*;
