@@ -1,4 +1,4 @@
-package algo_0222;
+package GraphTraversal;
 
 import java.io.*;
 import java.util.*;
