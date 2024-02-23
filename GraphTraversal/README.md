@@ -18,4 +18,6 @@
 | 2024.02.20 | [14940](https://www.acmicpc.net/problem/14940)  | 쉬운최단거리		                    |   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/10.svg"/>   |
 | 2024.02.21 | [2573](https://www.acmicpc.net/problem/2573)	   | 빙산				                    |   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/12.svg"/>   |
 | 2024.02.21 | [13023](https://www.acmicpc.net/problem/13023)  | ABCDE			                    |   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/11.svg"/>   |
+| 2024.02.22 | [17471](https://www.acmicpc.net/problem/17471)  | 게리맨더링			                    |   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/12.svg"/>   |
+| 2024.02.22 | [1238](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV15B1cKAKwCFAYD)  | Contact					   	   		|       그래프탐색        | D4  |
 
