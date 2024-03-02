@@ -22,3 +22,9 @@
 | 2024.02.22 | [1238](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV15B1cKAKwCFAYD)  | Contact					   	   		|       그래프탐색        | D4  |
 | 2024.02.24 | [2206](https://www.acmicpc.net/problem/2206)    | 벽 부수고 이동하기			            |   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/13.svg"/>   |
 | 2024.02.25 | [7569](https://www.acmicpc.net/problem/7569)    | 토마토			                    |   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/11.svg"/>   |
+| 2024.02.28 | [1600](https://www.acmicpc.net/problem/1600)    | 말이 되고픈 원숭이			            |   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/13.svg"/>   |
+| 2024.02.29 | [1767](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV4suNtaXFEDFAUf)  | 프로세서 연결하기					   	   		|       그래프탐색        | SW Test  |
+| 2024.02.29 | [14502](https://www.acmicpc.net/problem/14502)  | 연구소			                    |   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/12.svg"/>   |
+| 2024.03.01 | [16236](https://www.acmicpc.net/problem/16236)  | 아기상어			                    |   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/13.svg"/>   |
+| 2024.03.02 | [2146](https://www.acmicpc.net/problem/2146)    | 다리 만들기			                |   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/13.svg"/>   |
+| 2024.02.02 | [17472](https://www.acmicpc.net/problem/17472)  | 다리 만들기2			                |   그래프 탐색  | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/15.svg"/>   |
