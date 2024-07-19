@@ -6,8 +6,11 @@ import java.util.*;
 import static java.lang.Integer.parseInt;
 
 public class BJ_6087_레이저통신 {
+    /**
+     * 11%에서 틀림...
+     */
 
-    static class Node{
+    static class Node implements Comparable<Node>{
         int r;
         int c;
         int count;
@@ -18,6 +21,11 @@ public class BJ_6087_레이저통신 {
             this.c = c;
             this.count = count;
             this.d = d;
+        }
+
+        @Override
+        public int compareTo(Node o) {
+            return this.count - o.count;
         }
     }
 
@@ -66,9 +74,19 @@ public class BJ_6087_레이저통신 {
     }
 
     static void bfs(int startR, int startC){
-        Queue<Node> queue = new LinkedList<>();
-        queue.add(new Node(startR, startC, 0));
+        PriorityQueue<Node> queue = new PriorityQueue<>();
+        //Queue<Node> queue = new LinkedList<>();
         visit[startR][startC] = 1;
+
+        for(int d=0; d<4; d++){
+            int nr = startR + dr[d];
+            int nc = startC + dc[d];
+            if(nr >= 0 && nr < H && nc >= 0 && nc < W && map[nr][nc] == '.'){
+                queue.add(new Node(nr, nc, 0, d));
+                visit[nr][nc] = 1;
+            }
+        }
+
 
         while(!queue.isEmpty()){
             Node out = queue.poll();
@@ -78,7 +96,17 @@ public class BJ_6087_레이저통신 {
             }
 
             for(int d=0; d<4; d++){
-
+                int nr = out.r + dr[d];
+                int nc = out.c + dc[d];
+                if(nr >= 0 && nr < H && nc >= 0 && nc < W && (map[nr][nc] == '.' || map[nr][nc] == 'C') && visit[nr][nc] == 0){
+                    if(out.d == d){
+                        queue.add(new Node(nr, nc, out.count, d));
+                        visit[nr][nc] = 1;
+                    } else {
+                        queue.add(new Node(nr, nc, out.count+1, d));
+                        visit[nr][nc] = 1;
+                    }
+                }
             }
         }
     }
